@@ -1,0 +1,39 @@
+page-recommend {
+
+.scan{
+    width:rem(484);
+    height:rem(490);
+    border-radius:rem(4);
+    background-color: #fff;
+    text-align: center;
+    color:#333333;
+    font-size:rem(30);
+    margin:rem(200) auto rem(180);
+    img{
+        width:rem(350);
+        height:rem(350);
+        margin-top:rem(40);
+    }
+}
+.share{
+    text-align: center;
+    width:rem(484);
+    margin:auto;
+    color:#4f5a8c;
+    font-size: rem(32);
+    img{
+        height:rem(86);
+        width:rem(86);
+        border-radius: 50%;
+        margin-top:rem(60);
+    }
+    .shareTo .line{
+        display:inline-block;
+        width:rem(100);
+        border-top:1px solid #4f5a8c;
+//      border-image: linear-gradient(#4f5a8c , #0d1723) 30 30;
+        vertical-align:5px; 
+        margin:0 rem(26);
+    }
+}
+}

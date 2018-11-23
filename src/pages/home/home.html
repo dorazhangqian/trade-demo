@@ -1,0 +1,28 @@
+<ion-content (swipe)="swipeEvent($event)">
+<div class='info'>
+	<div align="center"><img src="assets/imgs/head.png" alt="" (click)="toPageN('MyInfoPage')"/>
+	<div>
+		<p>333Admin</p>
+		<div class='state'><span>未激活</span></div>
+		<div class="level">
+			<img src="assets/imgs/star.png" alt="" />
+			<img src="assets/imgs/star.png" alt="" />
+			<img src="assets/imgs/star.png" alt="" />
+			<img src="assets/imgs/star.png" alt="" />
+			<img src="assets/imgs/star.png" alt="" />
+			<span>五星</span>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="home-grid">
+<div class='grid-div' *ngFor="let item of grids" (click)="toPageN(item.toPage)">
+	<div align="center" >
+		<img [src]="item.src" alt="" />
+	  <div>{{item.name}}</div>
+	  </div>
+</div>
+</div>
+
+</ion-content>

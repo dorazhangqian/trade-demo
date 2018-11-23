@@ -1,0 +1,49 @@
+<!--
+  Generated template for the TransferMoneyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>转账</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	<ion-list class='chooseType'>
+		<ion-item (click)="showCoinType($event)">
+    <h2>选择转账币种</h2>
+    <div  item-end >
+    	<span class="colorBlue">{{type }} </span> <ion-icon name="arrow-forward"></ion-icon>
+		</div>
+  </ion-item>
+	</ion-list>
+<ion-list>
+  <ion-item>
+    <ion-label fixed>收款人ID</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="uId" placeholder="请输入ID"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>输入数量</ion-label>
+    <ion-input type="number" value="" [(ngModel)]="uNum" placeholder="0"></ion-input>
+  </ion-item>
+
+</ion-list>
+<button ion-button block [disabled]='uId == "" && uNum == 0'>确认转账</button>
+</ion-content>
+
+<div class='iconType' *ngIf='showtype' (click)='closeType($event)'>
+	
+	<div class='typeList' (click)="showCoinType($event)">
+		<div align="center">选中币种</div>
+		<ul>
+			<li *ngFor='let item of typeList' (click)='chooseType(item.name)'><img [src]="item.src" alt="" />{{item.name}} <ion-icon class='typeIcon' name="checkmark" *ngIf='item.name == type'></ion-icon></li>
+		
+		</ul>
+	</div>
+</div>

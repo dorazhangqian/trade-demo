@@ -1,0 +1,44 @@
+page-problem {
+    ion-segment{
+   background-color:#152232 ; 
+   height:rem(100)    
+}
+.segment-ios .segment-button.segment-activated{
+    color:#ced9f4;
+    background: none;
+    font-size: rem(32);
+}
+.segment-ios .segment-button{
+    border:none;
+    color:#4f5a8c;
+    font-size: rem(30);
+}
+.shortLine{
+    width:rem(40);
+    height:rem(4);
+    background-color:#698bdf;
+    margin:auto;
+    border-radius:rem(2);
+}
+.list-ios{
+    margin-top:rem(18);
+}
+.item-ios{
+   background-color: #152232; 
+   color:#ced9f4;
+   margin-bottom:rem(4);
+   font-size: rem(30);
+}
+.item-ios.activated{
+    background-color:#111e2c;
+}
+.list-ios > .item-block:first-child{
+    border-top:none
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+     border-bottom:none
+}
+.item-ios.item-block .item-inner,.list-ios > .item-block:last-child .item-inner, .list-ios > .item-wrapper:last-child .item-block .item-inner{
+    border-bottom:none ;
+}
+}

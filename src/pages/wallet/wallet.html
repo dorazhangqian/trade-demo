@@ -1,0 +1,47 @@
+<!--
+  Generated template for the WalletPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的钱包</ion-title>
+    <a end class='historyRecord' (click)='toPageH("HistoryTradePage")'>
+                   历史交易记录
+    </a>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	<div class='allMoney'>
+		<div align="center">
+			<p>总资产</p>
+			<p>
+				0.5434534654  
+				<span>BTC</span> 
+			</p>
+		</div>
+		<div class="moneyGrid row">
+			<div class="col" align="center" (click)='toPageH("TransferMoneyPage")'><img src="assets/imgs/w_transferA.png" alt="" /><div>转账</div></div>
+			<div class="col" align="center" (click)='toPageH("WithdrawMoneyPage")'><img src="assets/imgs/w_withdrawM.png" alt="" /><div>提币</div></div>
+			<div class="col" align="center" (click)='toPageH("IncomePage")'><img src="assets/imgs/w_incomeM.png" alt="" /><div>收入</div></div>
+		</div>
+	</div>
+	<div class='moneyType'>
+		<div class='w_col' *ngFor="let item of moneyType" align="center">
+			<div>
+				<img class='typeImg' [src]="item.src" alt="" /> <span class="colorBlue"> {{item.name}}</span>
+			</div>
+				<p class="w_p1">{{item.num}} <span>{{item.name}}</span></p>
+				<img class="noMoney" src="assets/imgs/w_noMoney.png" alt="" />
+				<p class="w_p2">这个钱包还没有资产！</p>
+			<button class='entrustBtn'>委托</button>
+		</div>
+	</div>
+
+</ion-content>

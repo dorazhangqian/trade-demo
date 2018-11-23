@@ -1,0 +1,14 @@
+page-contact {
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 50px 50px;
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div:nth-child(odd){background-color: papayawhip;}
+div:nth-child(even){background-color: pink;}
+}
+}

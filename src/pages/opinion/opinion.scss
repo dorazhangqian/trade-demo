@@ -1,0 +1,48 @@
+page-opinion {
+.historyRecord{
+    color:#6093ec;
+    font-size:rem(30);
+    float: right;
+    margin-right:rem(20)
+}
+.height18{
+    height:rem(18);
+    background-color: #0d1723;
+}
+textarea{
+    width:100%;
+    height:rem(140);
+    padding:rem(20) 0;
+    background-color: #152232;
+    border:none;
+    color:#ced9f4;
+    font-size: rem(28);
+    word-break: break-all;  
+}
+.opinionContent{
+    margin-top:rem(18);
+    padding:0 rem(30) rem(30);
+    background-color:#152232 ;
+}
+.imgCont{
+    display: flex;
+    div{
+        margin-left:rem(14);
+    }
+    img{
+    width:rem(160);
+    height:rem(160);
+    border-radius: rem(10);
+    vertical-align:top;  
+    }
+    ion-icon{
+        position: relative;
+        left: -10px;
+        top: -5px;
+        color: red;
+        background-color: #fff;
+        border-radius: 50%;
+        line-height: 0.8;
+    }
+}
+}

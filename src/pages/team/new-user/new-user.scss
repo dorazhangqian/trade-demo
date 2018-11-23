@@ -1,0 +1,201 @@
+page-new-user {
+.label-ios + ion-input .text-input, .label-ios + ion-textarea .text-input, .label-ios + .input + .cloned-input{
+    text-align: end;
+    color: #7d89c3;
+}
+
+::-webkit-input-placeholder{
+    color:#3b4365;
+}
+
+.colorBlue{
+    color:#7d89c3
+}
+.chooseType{
+    margin:rem(19) 0 rem(14) 0;
+}
+.secondList{
+    margin-top: rem(20);
+    margin-bottom: rem(14);
+}
+.item-ios{
+    margin-bottom:rem(4);
+    background-color: #152232;
+    color:#ced9f4;
+}
+ion-input{
+   font-size: rem(28);
+   color:#7d89c3;   
+}
+.myTextarea{
+  width:100%;
+  background-color: #152232; 
+  margin-top:rem(20); 
+  padding:0 rem(30); 
+  .div1{
+      color:#698bdf;
+      font-size: rem(34);
+      padding:rem(34) 0;
+      border-bottom:1px solid #1f3249; 
+  }
+  .copy{
+      display: flex;
+      justify-content: flex-end;
+      .mycopy{
+      width:rem(100);
+      height:rem(46);
+      line-height:rem(46);
+      text-align: center;
+      border-radius:rem(6);
+      color:#698bdf;
+      border:1px solid #698bdf;
+      margin-bottom: rem(30);
+  }
+  }
+  
+}
+.mylabel{
+      background-color: #152232;
+      color:#698bdf;
+      font-size: rem(34);
+      padding:rem(34) rem(30);
+      border-bottom:1px solid #1f3249;
+  }
+textarea{
+    width:100%;
+    height:rem(140);
+    padding:rem(20) 0;
+    background-color: #152232;
+    border:none;
+    color:#ced9f4;
+    font-size: rem(28);
+    word-break: break-all;  
+}
+.phoneImg{
+    width:rem(48);
+    height:rem(32);
+    border-radius:rem(4);
+    vertical-align: top;
+}
+.phoneicon{
+    margin-left:2px;
+}
+.item-ios [item-start]{
+    margin-right:8px
+}
+
+.label-ios{
+    font-size:rem(30);
+}
+.button-block{
+    width:92%;
+    margin:auto
+}
+//.list-header-ios{
+//  border-bottom:1px solid #1f3249;
+//}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom:none; 
+}
+
+.list-ios > .item-block:first-child {
+    border-top:none; 
+}
+.list-ios .item-block .item-inner {
+    border-bottom:none; 
+}
+.item-ios.item-block .item-inner {
+    border-bottom:none;
+}
+.typeImg{
+    vertical-align: middle;
+    margin-right:rem(10);
+    height:rem(60);
+    width:rem(60);
+    border-radius: 50%;
+}
+.walletAddr{
+    width:rem(328);
+    height:rem(64);
+}
+.iconType{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    height:100%;
+    width:100%;
+    overflow-y: scroll;
+    background: rgba(0,0,0,0.3);
+    .typeList{
+        position:fixed;
+        background-color:#fff;
+        width:100%;
+        height:auto;
+        bottom: 0;
+        div{
+            height:rem(85);
+            line-height:rem(85);
+            border-bottom: 1px solid #f2f2f2;
+        }
+        ul{
+            list-style: none;
+            margin:0;
+            padding:0 rem(30);
+            li{
+                margin:rem(20) 0;
+                font-size:rem(32);
+                img{
+                    vertical-align: middle;
+                    margin-right:rem(10);
+                    height:rem(48);
+                    width:rem(72);
+                }
+                .typeIcon{
+                    float:right;
+                    color:#698bdf;
+                    font-size:rem(68);
+                }
+                span{
+                    color:#666666;
+                    margin-left:rem(20)
+                    
+                }
+            }
+        }
+        
+    }
+}
+  .checkbox-ios{
+      vertical-align: middle;
+      margin-right:rem(10);
+  }
+.myCheckbox{
+  padding:rem(30) rem(30) rem(80) rem(30);
+  color:#4774e1;
+  font-size: rem(28);
+  
+}
+.checkbox-ios .checkbox-icon{
+    border-radius: 20%;
+    border-color:#4774e1 ;
+        width: 20px;
+    height: 20px;
+}
+.checkbox-ios .checkbox-checked,.checkbox-ios .checkbox-icon{
+    background-color:#0d1723;
+}
+.checkbox-ios .checkbox-checked .checkbox-inner{
+    border-color:#4774e1 ;
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border-width: 2px;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+.myBtncj{
+    margin-bottom:rem(40);
+}
+}

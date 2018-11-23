@@ -1,0 +1,29 @@
+page-team {
+.listImg{
+    width:rem(80);
+    height:rem(80);
+    vertical-align: middle;
+    margin-right:rem(20);
+}
+.list-ios{
+    margin-top:rem(18);
+}
+.item-ios{
+   background-color: #152232; 
+   color:#ced9f4;
+   margin-bottom:rem(4);
+   font-size:rem(32)
+}
+.item-ios.activated{
+    background-color:#111e2c;
+}
+.list-ios > .item-block:first-child{
+    border-top:none
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+     border-bottom:none
+}
+.item-ios.item-block .item-inner,.list-ios > .item-block:last-child .item-inner, .list-ios > .item-wrapper:last-child .item-block .item-inner{
+    border-bottom:1px solid #1f3249 ;
+}
+}

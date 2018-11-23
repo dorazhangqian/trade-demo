@@ -1,0 +1,34 @@
+<!--
+  Generated template for the OpinionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>意见反馈</ion-title>
+    <a end class='historyRecord'>
+                   确定
+    </a>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<div class='opinionContent'>
+	<textarea [(ngModel)]="addr" name="" rows="" cols="" placeholder="请输入内容~"></textarea>
+	<div class='imgCont'>
+		<div *ngIf='myImg'>
+			<img src="assets/imgs/head.png" alt="" />
+			<ion-icon name="close-circle" (click)='myImg=false'></ion-icon>
+		</div>
+		<div>
+			<img src="assets/imgs/takePhone.png" alt="" />
+		</div>
+		
+	</div>
+</div>
+
+</ion-content>

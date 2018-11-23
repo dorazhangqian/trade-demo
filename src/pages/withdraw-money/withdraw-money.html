@@ -1,0 +1,57 @@
+<!--
+  Generated template for the WithdrawMoneyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>提币</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+	<ion-list class='chooseType'>
+		<ion-item (click)="showCoinType($event)">
+    <h2>选择币种</h2>
+    <div  item-end >
+    	<span class="colorBlue"><img [src]="typesrc" class='typeImg' alt="" />{{type }} </span> <ion-icon name="arrow-forward"></ion-icon>
+		</div>
+  </ion-item>
+	</ion-list>
+<ion-list class='secondList'>
+  <!--<ion-item>
+    <ion-label fixed>收款人ID</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="uId" placeholder="请输入ID"></ion-input>
+  </ion-item>-->
+
+  <ion-item>
+    <ion-label fixed>输入数量</ion-label>
+    <ion-input type="number" value="" [(ngModel)]="uNum" placeholder="0"></ion-input>
+  </ion-item>
+  <ion-item  style='margin-bottom: 0;border-bottom: 1px solid #1e3147;'>
+    <ion-label fixed>钱包地址</ion-label>
+    <img class='walletAddr' item-end src="assets/imgs/uploadW.png" alt="" />
+    <!--<ion-input type="file" item-end  placeholder="请输入钱包地址"></ion-input>-->
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" value="" [(ngModel)]="wAddr" placeholder="请输入钱包地址"></ion-input>
+  </ion-item>
+</ion-list>
+<textarea name="" rows="" cols="" placeholder="请在此备注"></textarea>
+<div class='myCheckbox'>
+	<ion-checkbox checked="true"></ion-checkbox><span>我同意提币到电子钱包</span>
+</div>
+<button ion-button block (click)="toPage()">确认</button>
+</ion-content>
+
+<div class='iconType' *ngIf='showtype' (click)='closeType($event)'>
+	
+	<div class='typeList' (click)="showCoinType($event)">
+		<div align="center">选中币种</div>
+		<ul>
+			<li *ngFor='let item of typeList' (click)='chooseType(item)'><img [src]="item.src" alt="" />{{item.name}} <ion-icon class='typeIcon' name="checkmark" *ngIf='item.name == type'></ion-icon></li>
+		</ul>
+	</div>
+</div>

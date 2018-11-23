@@ -1,0 +1,148 @@
+// http://ionicframework.com/docs/theming/
+
+@function rem($px) {
+  @return $px / 37.5 * 1.6rem;
+}
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//content
+.content-ios{
+    background-color: #0d1723;
+    color:#ced9f4
+}
+
+$primaryColor:#152232;//主题色
+
+//toolbar
+.toolbar-background-ios{
+    background-color:$primaryColor; 
+}
+.toolbar-title-ios{
+    color:#ced9f4
+}
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+  color:#ced9f4;  
+}
+//tabs
+.tabs-ios .tabbar{
+    background: #1b2441;
+}
+.tabs-ios .tab-button-icon,.tabs-ios .tab-button{
+    color:#4f5a8c
+}
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon,.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true]{
+    color:#698bdf
+}
+.action-sheet-ios .action-sheet-group {
+    border-radius:rem(4); 
+    margin-bottom:0; 
+    background: #f9f9f9;
+}
+.action-sheet-ios .action-sheet-group:last-child{
+   margin-bottom:0; 
+}
+.action-sheet-ios .action-sheet-container{
+    padding:0;
+}
+.action-sheet-ios .action-sheet-group:first-child{
+    margin-bottom:rem(10)
+}
+.action-sheet-ios .action-sheet-destructive{
+    color:#333;
+    font-size:rem(34);
+}
+.action-sheet-ios .action-sheet-button{
+   color:#333;
+   font-size:rem(34); 
+}
+.picker-ios .picker-wrapper {
+    width: 80%;
+    height: 260px;
+    border-top: 1px solid #c8c7cc;
+    background: #fff;
+    border-radius: 4px;
+}
+.picker-wrapper {
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    margin: auto;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    position: absolute;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 500px;
+    contain: strict;
+}
+.picker-ios .picker-toolbar-cancel {
+    text-align: left;
+    text-align: start;
+    font-weight: normal;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.picker-ios .picker-toolbar-button{
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+.datetime-text{
+    display: none;
+}
+input::-webkit-input-placeholder{
+    color:#3b4365 !important;
+}
+::-webkit-input-placeholder{
+    color:#3b4365;
+}
+.searchbar-ios .searchbar-input::-webkit-input-placeholder{
+    color:#23354b;
+}
+.input-ios::-webkit-input-placeholder{
+    color:#3b4365 !important;
+}
+.ion-ios-copy-outline{
+    background:url('../assets/imgs/tabstwo.png') no-repeat center;
+    background-size: 80% 90%;
+}
+.ion-ios-copy-outline:before,.ion-ios-copy:before{
+    content:'';
+}
+.ion-ios-copy{
+    background:url('../assets/imgs/tabstwo2.png') no-repeat center;
+    background-size: 80% 90%;
+}
+.ion-ios-paper-outline{
+    background:url('../assets/imgs/tabsthree3.png') no-repeat center;
+    background-size: 80% 90%;
+}
+.ion-ios-paper-outline:before,.ion-ios-paper:before{
+    content:'';
+}
+.ion-ios-paper{
+    background:url('../assets/imgs/tabsthree.png') no-repeat center;
+    background-size: 80% 90%;
+}
+

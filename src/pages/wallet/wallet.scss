@@ -1,0 +1,75 @@
+page-wallet {
+    .historyRecord{
+    color:#6093ec;
+    font-size:rem(30);
+    float: right;
+    margin-right:rem(20)
+}
+.allMoney{
+    height:rem(440);
+    width:100%;
+    margin:rem(10) 0 rem(10) 0;
+    padding-top:rem(70);
+    background-color:#152232 ;
+    p:nth-child(1){
+        font-size:rem(30);
+    }
+    p:nth-child(2){
+        font-size:rem(50);
+        color:#e86e49
+    }
+}
+.moneyGrid div.col{
+    padding:rem(24) 0;
+    background-color: #152232;
+    border-radius:rem(6);
+    margin:rem(20);
+    box-shadow:rem(2) rem(2) rem(20) rem(20)  #101c2a;
+    img{
+        width:rem(44);
+        height:rem(44)
+    }
+}
+.moneyType{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin:0 rem(5);
+     div.w_col{
+         div{
+             padding-bottom:rem(10);
+         } 
+         padding:rem(20);
+         background-color:#152232;
+         margin:rem(5);
+     }
+     .colorBlue{
+         color:#6093ec;
+         font-size:rem(26);
+     }
+     .typeImg{
+        width:rem(48);
+        height:rem(48); 
+        vertical-align: middle;
+     }
+     .noMoney{
+         width:rem(247);
+         height:rem(239);
+     }
+     .entrustBtn{
+         color:#6093ec;
+         border:rem(2) solid #6093ec;
+         border-radius: rem(4);
+         padding:rem(10) 0;
+         background-color: #0f1824;
+         width:rem(130);
+         font-size:rem(28)
+     }
+     .w_p1{
+         font-size:rem(34);
+         margin:0;
+     }
+     .w_p2{
+         font-size:rem(24);
+     }
+}
+}

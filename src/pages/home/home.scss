@@ -1,0 +1,56 @@
+page-home {
+ .info{
+   background:url(../assets/imgs/infoBg.png) no-repeat left bottom;
+   background-size:100% 100%;
+   background-color: #000a20;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:rem( 710); 
+   p{font-size:rem(32)}
+   div img{
+       border-radius:50%;
+       height: rem(140);
+       width:rem(140);
+   }
+   .state span{
+       background-color: #ed6d3e;
+       border-radius:rem(4);
+       padding:rem(4) rem(12);
+       font-size:rem(24)
+   }
+   
+   .level{
+       height:rem(60);
+       line-height:rem(60);
+       vertical-align: middle;
+       margin-top:rem(16);
+       img{
+       height: rem(32);
+       width:rem(32);
+       vertical-align: middle;
+       }
+       span{margin-left:rem(14)}
+        font-size:rem(24);
+       }
+    
+ }
+ .home-grid{
+     padding:rem(3);
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: rem(240) rem(240);
+     .grid-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #1b2441;
+        margin:rem(3);
+        font-size: rem(28);
+        img{
+            height: rem(80);
+            width:rem(80);
+        }        
+     }
+ }
+}

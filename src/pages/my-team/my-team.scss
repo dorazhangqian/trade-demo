@@ -1,0 +1,51 @@
+page-my-team {
+.listImg{
+    width:rem(80);
+    height:rem(80);
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.list-ios{
+    margin-top:rem(18);
+    background-color: #152232;
+    padding-left:rem(30)
+}
+.item-ios{
+   color:#ced9f4;
+   background-color: #152232;
+   padding-left:0;
+   font-size:rem(32)
+}
+.list-ios > .item-block:first-child{
+    border-top:none
+}
+.list-ios > .item-block:last-child,{
+     border-bottom:1px solid #1f3249 ;
+}
+.item-ios.item-block .item-inner,.list-ios > .item-block:last-child .item-inner, .list-ios > .item-wrapper:last-child .item-block .item-inner{
+    border-bottom:none;
+}
+.list-ios > .item-block,.list-ios > .item-wrapper:last-child .item-block{
+    border-bottom:1px solid #1f3249 ;
+}
+.searchbar-ios .searchbar-input{
+    border-radius:rem(32) ;
+    background-color:#0d1723;
+    color:#ced9f4
+}
+.searchbar-ios{
+    background-color:#152232;
+    padding:rem(26)
+}
+.searchbar-ios .searchbar-search-icon{
+    left:18px;
+    top:12px;
+}
+.searchbar-ios.searchbar-left-aligned .searchbar-input {
+    padding-left: 38px;
+}
+.pColor{
+    color:#7d89c3;
+    font-size:rem(24)
+}
+}

@@ -1,0 +1,69 @@
+<!--
+  Generated template for the IncomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>收入</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-segment [(ngModel)]="type" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="capital">
+        	 资金收入明细
+        	 <div *ngIf='type == "capital"' class='shortLine'></div>
+      </ion-segment-button>
+      <ion-segment-button value="expand">
+     			  拓展收入明细
+     			 <div *ngIf='type == "expand"' class='shortLine'></div>
+      </ion-segment-button>
+    </ion-segment>
+<table>
+	<thead>
+		<tr>
+			<th style='width:24%'>日期</th>
+			<th>奖励类型</th>
+			<th style='width:16%'>货币</th>
+			<th>奖金钱包</th>
+			<th>总额<div class='font22'>（折合USTD）</div></th>
+		</tr>
+	</thead>
+<tbody *ngIf='type == "capital"'>
+		<tr *ngFor='let item of itemsc'>
+			<td>{{item.date}}</td>
+			<td>{{item.type}}</td>
+			<td>{{item.currency}}</td>
+			<td>{{item.wallet}}</td>
+			<td>{{item.all}}</td>
+		</tr>
+		<tr class="noincome" *ngIf='itemsc.length == 0'>
+			<td  colspan="5">			
+			<img src="assets/imgs/noincome.png" alt="" />
+			<p>没有匹配信息!</p>
+			</td>
+		</tr>
+	</tbody>
+	
+	<tbody *ngIf='type == "expand"'>
+		<tr *ngFor='let item of itemse'>
+			<td>{{item.date}}</td>
+			<td>{{item.type}}</td>
+			<td>{{item.currency}}</td>
+			<td>{{item.wallet}}</td>
+			<td>{{item.all}}</td>
+		</tr>
+		<tr class="noincome" *ngIf='itemse.length == 0'>
+			<td  colspan="5">			
+			<img src="assets/imgs/noincome.png" alt="" />
+			<p>没有匹配信息!</p>
+			</td>			
+		</tr>
+	</tbody>
+</table>
+</ion-content>
